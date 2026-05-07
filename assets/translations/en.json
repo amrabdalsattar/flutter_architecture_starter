@@ -1,0 +1,16 @@
+{
+    "validation": {
+        "fullNameRequired": "Full name is required",
+        "fullNameMinLength": "Full name must be more than 2 characters",
+        "fullNameMaxLength": "Full name must be less than 50 characters",
+        "phoneRequired": "Phone number is required",
+        "phoneLength": "Phone number must be 11 digits",
+        "phoneOnlyNumbers": "Phone number must contain only numbers",
+        "numberRequired": "This number is required",
+        "onlyNumbers": "Must contain only numbers",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Invalid email address",
+        "fieldRequired": "{fieldName} is required",
+        "fieldMaxLength": "{fieldName} must be less than {maxLength} characters"
+    }
+}

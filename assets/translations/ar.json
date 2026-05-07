@@ -1,0 +1,16 @@
+{
+    "validation": {
+        "fullNameRequired": "الاسم الكامل مطلوب",
+        "fullNameMinLength": "الاسم يجب أن يكون أكثر من حرفين",
+        "fullNameMaxLength": "الاسم يجب أن يكون أقل من 50 حرفًا",
+        "phoneRequired": "رقم الهاتف مطلوب",
+        "phoneLength": "رقم الهاتف يجب أن يكون 11 رقم",
+        "phoneOnlyNumbers": "رقم الهاتف يجب أن يحتوي على أرقام فقط",
+        "numberRequired": "هذا الرقم مطلوب",
+        "onlyNumbers": "يجب أن يحتوي على أرقام فقط",
+        "emailRequired": "البريد الإلكتروني مطلوب",
+        "emailInvalid": "البريد الإلكتروني غير صحيح",
+        "fieldRequired": "{fieldName} مطلوب",
+        "fieldMaxLength": "{fieldName} يجب أن يكون أقل من {maxLength} حرفًا"
+    }
+}
