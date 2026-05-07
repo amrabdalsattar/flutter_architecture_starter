@@ -1,17 +1,34 @@
-# flutter_architecture_starter
+# Flutter Architecture Starter
 
-A new Flutter project.
+A production-ready Flutter boilerplate — clone, configure, and start building.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🛠️ Tech Stack
 
-A few resources to get you started if this is your first Flutter project:
+| Category | Package |
+|----------|---------|
+| State Management | `flutter_bloc` |
+| Dependency Injection | `get_it` |
+| Networking | `dio` + `internet_connection_checker` |
+| Localization | `easy_localization` |
+| Caching | `shared_preferences` + `flutter_secure_storage` |
+| Monitoring | `sentry_flutter` |
+| Push Notifications | `firebase_messaging` + `flutter_local_notifications` |
+| UI Utilities | `skeletonizer` + `lottie` + `flutter_svg` + `carousel_slider` |
+| Services | `image_picker` + `url_launcher` |
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/your-username/flutter_architecture_starter.git
+cd flutter_architecture_starter
+flutter pub get
+flutter run
+```
+
+---
+
+> Made with ❤️ by [Amr Abdelsattar](https://github.com/amrabdalsattar)
