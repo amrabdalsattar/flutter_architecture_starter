@@ -3,7 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/services/user_service/user_service.dart';
-import '../../../core/utils/extensions.dart';
+import '../../extensions/navigations.dart';
 import 'deeplink_model.dart';
 
 class DeeplinkHandler {

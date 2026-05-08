@@ -25,6 +25,18 @@ class _ValidationLocale {
 
   String get onlyNumbers => 'validation.onlyNumbers'.tr();
 
+  String get passwordMinLength => 'validation.passwordMinLength'.tr();
+
+  String get passwordNoLowercase => 'validation.passwordNoLowercase'.tr();
+
+  String get passwordNoNumber => 'validation.passwordNoNumber'.tr();
+
+  String get passwordNoSpecialChar => 'validation.passwordNoSpecialChar'.tr();
+
+  String get passwordNoUppercase => 'validation.passwordNoUppercase'.tr();
+
+  String get passwordRequired => 'validation.passwordRequired'.tr();
+
   String get phoneLength => 'validation.phoneLength'.tr();
 
   String get phoneOnlyNumbers => 'validation.phoneOnlyNumbers'.tr();

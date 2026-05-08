@@ -44,7 +44,13 @@
         "emailRequired": "البريد الإلكتروني مطلوب",
         "emailInvalid": "البريد الإلكتروني غير صحيح",
         "fieldRequired": "{fieldName} مطلوب",
-        "fieldMaxLength": "{fieldName} يجب أن يكون أقل من {maxLength} حرفًا"
+        "fieldMaxLength": "{fieldName} يجب أن يكون أقل من {maxLength} حرفًا",
+        "passwordRequired": "Password is required",
+        "passwordMinLength": "Password must be at least 8 characters",
+        "passwordNoUppercase": "Password must contain at least one uppercase letter",
+        "passwordNoLowercase": "Password must contain at least one lowercase letter",
+        "passwordNoNumber": "Password must contain at least one number",
+        "passwordNoSpecialChar": "Password must contain at least one special character"
     },
     "errors": {
         "unknownError": "حدث خطأ غير معروف",

@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../extensions/alerts.dart';
+import '../../extensions/dialogs.dart';
 import '../../helpers/log_helper.dart';
 import '../../networking/result_or_failure.dart';
 import '../../theming/app_colors.dart';
 import '../../theming/app_sizer.dart';
-import '../../utils/extensions.dart';
+import '../../extensions/navigations.dart';
 import '../app_skeletonizer.dart';
 import '../exception_widget.dart';
 import 'failure_widget.dart';

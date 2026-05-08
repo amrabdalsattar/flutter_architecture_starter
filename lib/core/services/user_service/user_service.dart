@@ -6,6 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../features/login/ui/login_screen.dart';
 import '../../di/dependency_injection.dart';
+import '../../extensions/dialogs.dart';
 import '../../helpers/localization/locale_keys.dart';
 import '../../helpers/log_helper.dart';
 import '../../models/user_model.dart';
@@ -13,7 +14,7 @@ import '../../networking/api_constants.dart';
 import '../../networking/api_request_model.dart';
 import '../../networking/dio_helper.dart';
 import '../../utils/app_utils.dart';
-import '../../utils/extensions.dart';
+import '../../extensions/navigations.dart';
 import '../notifications_service.dart';
 
 part 'user_local_data_source.dart';

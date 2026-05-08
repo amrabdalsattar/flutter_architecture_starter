@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 
 import '../theming/app_colors.dart';
 import '../theming/app_text_styles.dart';
-import '../utils/extensions.dart';
+import '../extensions/navigations.dart';
 import 'app_text.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {

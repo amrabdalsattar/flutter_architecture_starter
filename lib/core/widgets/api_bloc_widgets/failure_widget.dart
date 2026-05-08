@@ -7,7 +7,7 @@ import 'package:internet_connection_checker/internet_connection_checker.dart';
 import '../../helpers/localization/locale_keys.dart';
 import '../../theming/app_colors.dart';
 import '../../theming/app_text_styles.dart';
-import '../../utils/extensions.dart';
+import '../../extensions/navigations.dart';
 import 'api_cubit.dart';
 
 class FailureWidget<T extends Cubit<ApiState>> extends StatefulWidget {
