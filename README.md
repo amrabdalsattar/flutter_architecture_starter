@@ -31,4 +31,8 @@ flutter run
 
 ---
 
+<<<<<<< HEAD
 > Made with ❤️ by [Amr Abdelsattar](https://github.com/amrabdalsattar)
+=======
+> Made with ❤️ by [Amr Abdelsattar](https://github.com/amrabdalsattar)
+>>>>>>> 86b23bd7a46e3e1347baa94f068270ca98beeba0
