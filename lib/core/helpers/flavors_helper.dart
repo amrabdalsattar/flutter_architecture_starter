@@ -9,9 +9,9 @@ class FlavorsHelper {
   static void initProduction() => _flavor = Flavor.production;
   static void initStaging() => _flavor = Flavor.staging;
 
-  static final isDevelopment = _flavor == Flavor.development;
-  static final isProduction = _flavor == Flavor.production;
-  static final isStaging = _flavor == Flavor.staging;
+  static bool get isDevelopment => _flavor == Flavor.development;
+  static bool get isProduction => _flavor == Flavor.production;
+  static bool get isStaging => _flavor == Flavor.staging;
 
   static bool get isLive => kReleaseMode && isProduction;
 

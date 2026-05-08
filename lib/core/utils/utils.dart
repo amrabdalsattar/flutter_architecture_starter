@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../helpers/app_bloc_observer.dart';
 
-abstract class Utils {
+abstract class AppUtils {
   static void unfocus(BuildContext context) => FocusScope.of(context).unfocus();
 
   static void setBlocObserver() => Bloc.observer = AppBlocObserver();
