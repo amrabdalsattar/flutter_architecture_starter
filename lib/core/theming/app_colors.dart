@@ -9,6 +9,7 @@ abstract class AppColors {
   static const border = Color(0xffE1E8F0);
   static const blueGray = Color(0xffA3ACBA);
   static const darkGray = Color(0xff66696D);
+  static const offWhite = Color(0xffF6F7F8);
 
   // Primary
   static const primary = Color(0xff14A488);

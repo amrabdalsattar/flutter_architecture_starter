@@ -5,6 +5,15 @@ import 'package:internet_connection_checker/internet_connection_checker.dart';
 import '../helpers/app_bloc_observer.dart';
 import '../networking/api_error_handler.dart';
 import '../networking/result_or_failure.dart';
+import 'package:intl/intl.dart';
+
+String numbersFormat(num price) {
+  if (price >= 1000) {
+    return NumberFormat('#,##0.#').format((price));
+  } else {
+    return NumberFormat('###.#').format((price));
+  }
+}
 
 void unfocus(BuildContext context) => FocusScope.of(context).unfocus();
 
