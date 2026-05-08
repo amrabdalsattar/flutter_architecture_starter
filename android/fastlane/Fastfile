@@ -1,0 +1,20 @@
+default_platform(:android)
+
+platform :android do
+
+  desc "Prepare Android Build & Distribute to Firebase App distribution"
+  lane :distribute_to_firebase do 
+    sh "flutter clean"
+    sh "flutter build apk --release --flavor staging --target lib/staging_main.dart --obfuscate --split-debug-info=./debug-info"
+    firebase_app_distribution(
+      # TODO: Add your app id here
+      app: "",
+      firebase_cli_token: ENV["FIREBASE_CLI_TOKEN"],
+      groups: "testers",
+      android_artifact_type: "APK",
+      apk_path: "../build/app/outputs/flutter-apk/app-staging-release.apk",
+      release_notes: "",
+    )
+  end
+
+end
