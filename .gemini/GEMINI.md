@@ -126,7 +126,7 @@
 ## Observability
 
 **20. Logging Is Structured and Meaningful**
-- Log important flows, decisions, and failures using `RMLogger`
+- Log important flows, decisions, and failures
 - Logs must be meaningful — avoid noise
 - Never log sensitive or personal data
 - Errors must always include enough context to reproduce and debug
