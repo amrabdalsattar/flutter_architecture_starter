@@ -45,16 +45,14 @@ class AppElevatedButton extends StatelessWidget {
         height: height,
         decoration: BoxDecoration(
           gradient: gradient,
-          color:
-              deActivated
-                  ? (color ?? AppColors.primary).withValues(alpha: .4)
-                  : (color ?? AppColors.primary),
+          color: deActivated
+              ? (color ?? AppColors.primary).withValues(alpha: .4)
+              : (color ?? AppColors.primary),
           borderRadius: BorderRadius.circular(borderRadius ?? 8),
           border: Border.all(
-            color:
-                deActivated
-                    ? (borderColor ?? AppColors.primary).withValues(alpha: .4)
-                    : (borderColor ?? AppColors.primary),
+            color: deActivated
+                ? (borderColor ?? AppColors.primary).withValues(alpha: .4)
+                : (borderColor ?? AppColors.primary),
           ),
         ),
 

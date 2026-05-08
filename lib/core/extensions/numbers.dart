@@ -1,5 +1,3 @@
-
-
 extension IntExtension<T> on String {
   bool get isInt => int.tryParse(this) != null;
 }
@@ -9,7 +7,6 @@ extension ToFixed on double {
       double.parse(toStringAsFixed(fractionDigits));
 }
 
-
 extension ToIntString on num {
   String toIntStringIfPossible() {
     if (this == toInt()) return toInt().toString();
@@ -17,4 +14,3 @@ extension ToIntString on num {
     return toString();
   }
 }
-

@@ -46,15 +46,14 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       toolbarHeight: toolbarHeight,
       leading: _buildLeading(context),
       leadingWidth: showLeading ? leadingWidth : 0,
-      title:
-          title is Widget
-              ? title
-              : AppText(
-                title,
-                style: AppTextStyles.font16MediumBlack.copyWith(
-                  color: foregroundColor ?? AppColors.black,
-                ),
+      title: title is Widget
+          ? title
+          : AppText(
+              title,
+              style: AppTextStyles.font16MediumBlack.copyWith(
+                color: foregroundColor ?? AppColors.black,
               ),
+            ),
       centerTitle: centerTitle,
       actions: actions,
       systemOverlayStyle: systemOverlayStyle,
@@ -68,13 +67,13 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     if (showLeading) {
       return context.canPop()
           ? IconButton(
-            icon: Icon(
-              Icons.arrow_back_ios,
-              color: foregroundColor ?? AppColors.black,
-              size: 18,
-            ),
-            onPressed: onBackPressed ?? () => context.pop(),
-          )
+              icon: Icon(
+                Icons.arrow_back_ios,
+                color: foregroundColor ?? AppColors.black,
+                size: 18,
+              ),
+              onPressed: onBackPressed ?? () => context.pop(),
+            )
           : null;
     }
 

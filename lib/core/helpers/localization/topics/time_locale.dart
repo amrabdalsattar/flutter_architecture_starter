@@ -27,13 +27,10 @@ class _TimeLocale {
 
   String get seconds => 'time.seconds'.tr();
 
-  String since(String name) =>
-      'time.since'.tr(
-          namedArgs: {'name': name});
+  String since(String name) => 'time.since'.tr(namedArgs: {'name': name});
 
   String sinceWithValue(String value, String name) =>
-      'time.sinceWithValue'.tr(
-          namedArgs: {'value': value, 'name': name});
+      'time.sinceWithValue'.tr(namedArgs: {'value': value, 'name': name});
 
   String get twoDays => 'time.twoDays'.tr();
 

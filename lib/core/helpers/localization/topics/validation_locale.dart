@@ -9,11 +9,11 @@ class _ValidationLocale {
 
   String fieldMaxLength(String fieldName, String maxLength) =>
       'validation.fieldMaxLength'.tr(
-          namedArgs: {'fieldName': fieldName, 'maxLength': maxLength});
+        namedArgs: {'fieldName': fieldName, 'maxLength': maxLength},
+      );
 
   String fieldRequired(String fieldName) =>
-      'validation.fieldRequired'.tr(
-          namedArgs: {'fieldName': fieldName});
+      'validation.fieldRequired'.tr(namedArgs: {'fieldName': fieldName});
 
   String get fullNameMaxLength => 'validation.fullNameMaxLength'.tr();
 

@@ -108,11 +108,11 @@ class _ApiBlocBuilderState<T extends Cubit<ApiState<L>>, L>
           case ApiFailureState<L>():
             return widget.hasRetry
                 ? FailureWidget(
-                  failureWidget:
-                      widget.failureWidget ??
-                      ExceptionWidget(text: state.errorMessage),
-                  request: widget.request,
-                )
+                    failureWidget:
+                        widget.failureWidget ??
+                        ExceptionWidget(text: state.errorMessage),
+                    request: widget.request,
+                  )
                 : widget.failureWidget ?? const SizedBox.shrink();
 
           case ApiSuccessState<L>():
