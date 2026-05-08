@@ -84,5 +84,32 @@
         "email": "Email",
         "example": "Example",
         "personalData": "Personal Data"
+    },
+    "time": {
+        "lessThanOneSecond": "Less than a second ago",
+        "since": "{name} ago",
+        "sinceWithValue": "{value} {name} ago",
+        "year": "Year",
+        "twoYears": "Two Years",
+        "years": "Years",
+        "month": "Month",
+        "twoMonths": "Two Months",
+        "months": "Months",
+        "week": "Week",
+        "twoWeeks": "Two Weeks",
+        "weeks": "Weeks",
+        "day": "Day",
+        "twoDays": "Two Days",
+        "days": "Days",
+        "hour": "Hour",
+        "twoHours": "Two Hours",
+        "hours": "Hours",
+        "minute": "Minute",
+        "twoMinutes": "Two Minutes",
+        "minutes": "Minutes",
+        "second": "Second",
+        "twoSeconds": "Two Seconds",
+        "seconds": "Seconds",
+        "orMore": "Or More"
     }
 }

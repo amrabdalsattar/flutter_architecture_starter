@@ -84,5 +84,32 @@
         "email": "البريد الإلكتروني",
         "example": "مثال",
         "personalData": "البيانات الشخصية"
+    },
+    "time": {
+        "lessThanOneSecond": "منذ أقل من ثانية",
+        "since": "منذ {name}",
+        "sinceWithValue": "منذ {value} {name}",
+        "year": "سنة",
+        "twoYears": "سنتين",
+        "years": "سنوات",
+        "month": "شهر",
+        "twoMonths": "شهرين",
+        "months": "أشهر",
+        "week": "أسبوع",
+        "twoWeeks": "أسبوعين",
+        "weeks": "أسابيع",
+        "day": "يوم",
+        "twoDays": "يومين",
+        "days": "أيام",
+        "hour": "ساعة",
+        "twoHours": "ساعتين",
+        "hours": "ساعات",
+        "minute": "دقيقة",
+        "twoMinutes": "دقيقتين",
+        "minutes": "دقائق",
+        "second": "ثانية",
+        "twoSeconds": "ثانيتين",
+        "seconds": "ثواني",
+        "orMore": "فأكثر"
     }
 }
