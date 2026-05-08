@@ -11,15 +11,21 @@ import '../theming/app_sizer.dart';
 
 abstract class AppInitialSetup {
   static Future<void> init() async {
+    FlutterError.onError = (FlutterErrorDetails details) {
+      MonitoringHelper.instance.log(
+        details.exception,
+        stackTrace: details.stack,
+      );
+    };
+
     await Future.wait([
       setupGetIt(),
+      EasyLocalization.ensureInitialized(),
       Firebase.initializeApp(
         //TODO: Add firebase options here if you are using firebase in your app
         // options: DefaultFirebaseOptions.currentPlatform
       ),
     ]);
-
-    await EasyLocalization.ensureInitialized();
 
     await Future.wait([
       AppSizer.ensureScreenSize(),
@@ -30,12 +36,5 @@ abstract class AppInitialSetup {
       // Notifications service
       NotificationsService.instance.initNotifications(),
     ]);
-
-    FlutterError.onError = (FlutterErrorDetails details) {
-      MonitoringHelper.instance.log(
-        details.exception,
-        stackTrace: details.stack,
-      );
-    };
   }
 }

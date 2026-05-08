@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../app.dart';
 import '../helpers/flavors_helper.dart';
+import '../helpers/localization/localization_helper.dart';
 import 'app_initial_setup.dart';
 import 'app_utils.dart';
 
@@ -17,7 +18,7 @@ abstract class AppRunner {
 
     await AppInitialSetup.init();
 
-    runApp(const MyApp());
+    runApp(LocalizationHelper.init(child: const MyApp()));
   }
 
   static void _setEnvironment(Flavor flavor) {

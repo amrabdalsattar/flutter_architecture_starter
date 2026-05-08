@@ -1,4 +1,4 @@
-import 'core/utils/app_initializer.dart';
+import 'core/utils/app_runner.dart';
 
 void main() async {
   await AppRunner.runProd();
