@@ -29,19 +29,16 @@ EN_FILE = "en.json"
 # ─────────────────────────────────────────────
 
 def camel_to_snake(name: str) -> str:
-    """clientViewLawyers → client_view_lawyers"""
     s = re.sub(r"([A-Z]+)([A-Z][a-z])", r"\1_\2", name)
     s = re.sub(r"([a-z\d])([A-Z])", r"\1_\2", s)
     return s.lower()
 
 
 def key_to_dart_filename(top_key: str) -> str:
-    """clientViewLawyers → client_view_lawyers_locale.dart"""
     return f"{camel_to_snake(top_key)}_locale.dart"
 
 
 def key_to_dart_classname(top_key: str) -> str:
-    """clientViewLawyers → _ClientViewLawyersLocale"""
     pascal = "".join(word.capitalize() for word in camel_to_snake(top_key).split("_"))
     return f"_{pascal}Locale"
 

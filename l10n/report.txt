@@ -8,18 +8,7 @@ Keys in en.json but missing in ar.json:
   [None]
 
 2. Keys in JSON files that are not present in locale keys classes (Extra keys):
-  - validation.emailInvalid
-  - validation.emailRequired
-  - validation.fieldMaxLength
-  - validation.fieldRequired
-  - validation.fullNameMaxLength
-  - validation.fullNameMinLength
-  - validation.fullNameRequired
-  - validation.numberRequired
-  - validation.onlyNumbers
-  - validation.phoneLength
-  - validation.phoneOnlyNumbers
-  - validation.phoneRequired
+  [None]
 
 3. Missing keys in JSON files (Used in Dart but missing in JSON files):
 Missing in ar.json:

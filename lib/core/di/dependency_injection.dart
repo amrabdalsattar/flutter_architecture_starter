@@ -1,6 +1,9 @@
 import 'package:get_it/get_it.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../networking/dio_factory.dart';
+import '../networking/dio_helper.dart';
+
 final getIt = GetIt.instance;
 
 Future<void> setupGetIt() async {
@@ -11,4 +14,6 @@ Future<void> setupGetIt() async {
     }),
   ]);
 
+  final dio = DioFactory.instance;
+  getIt.registerLazySingleton<ApiHelper>(() => DioHelperImpl(dio));
 }

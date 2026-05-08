@@ -4,8 +4,11 @@ abstract class AppColors {
   // Neutrals
   static const white = Colors.white;
   static const black = Colors.black;
+  static const transparent = Colors.transparent;
   static const surface = Color(0xffF8F9FB);
   static const border = Color(0xffE1E8F0);
+  static const blueGray = Color(0xffA3ACBA);
+  static const darkGray = Color(0xff66696D);
 
   // Primary
   static const primary = Color(0xff14A488);

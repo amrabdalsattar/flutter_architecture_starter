@@ -5,31 +5,25 @@ import '../models/font_model.dart';
 class AppFonts {
   AppFonts._();
 
-  static const FontModel arabic = FontModel(
+  static const FontModel _arabic = FontModel(
     primaryFont: 'Tajawal',
     secondaryFont: 'IBM Plex Sans Arabic',
   );
 
-  static const FontModel english = FontModel(
+  static const FontModel _english = FontModel(
     primaryFont: 'Syne',
     secondaryFont: 'Inter',
   );
 
-  static const FontModel french = FontModel(
-    primaryFont: 'Syne',
-    secondaryFont: 'Inter',
-  );
-
-  static const FontModel fallback = english;
+  static const FontModel fallback = _english;
 }
 
 class FontResolver {
   FontResolver._();
 
   static const Map<String, FontModel> _fontMap = {
-    'ar': AppFonts.arabic,
-    'en': AppFonts.english,
-    'fr': AppFonts.french,
+    'ar': AppFonts._arabic,
+    'en': AppFonts._english,
   };
 
   static FontModel resolve(Locale locale) {

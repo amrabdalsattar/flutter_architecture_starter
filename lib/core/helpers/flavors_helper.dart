@@ -14,16 +14,18 @@ class FlavorsHelper {
   static bool get isStaging => _flavor == Flavor.staging;
 
   static bool get isLive => kReleaseMode && isProduction;
+  static List<String> get fcmTopics => _flavor.fcmTopics;
 
   static String get apiBaseUrl => '${_flavor.baseUrl}api/';
 }
 
 enum Flavor {
-  development(''),
-  production(''),
-  staging('');
+  development('', ['all', 'development']),
+  production('', ['all', 'production']),
+  staging('', ['all', 'staging']);
 
   final String baseUrl;
+  final List<String> fcmTopics;
 
-  const Flavor(this.baseUrl);
+  const Flavor(this.baseUrl, this.fcmTopics);
 }
