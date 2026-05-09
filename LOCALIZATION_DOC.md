@@ -122,5 +122,4 @@ l10n/
 - `generate_locale_keys.py` deletes and recreates the entire topics directory
 - Both scripts expect UTF-8 encoded JSON files
 - Placeholder validation ensures `{variable}` names match between languages
-- The scripts are designed for Flutter Easy Localization package usage</content>
-<parameter name="filePath">d:\Flutter\flutter_architecture_starter\l10n\l10n_python_scripts.md
+- The scripts are designed for Flutter Easy Localization package usage
